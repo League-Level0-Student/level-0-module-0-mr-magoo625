@@ -21,6 +21,7 @@ spirally.setSpeed(1000);
 		// COUNT. Create an int variable that will count how many lines of the spiral we have drawn.
 			//        Start its value as zero.
 int count=0;
+count+=1; 
 
 		// LOOP. Start a while loop to repeat the COLOR, DRAW, TURN, and COUNT code below until 50 lines have been drawn
 		while(count < 90) {
@@ -36,9 +37,12 @@ int count=0;
 
 			// Change the robot pen width to the current value of the count variable 
 
-
+spirally.move(5*count);
+spirally.turn(900/7);
+count+=1;
+spirally.setPenWidth(count);
 		//  End the while loop here
-
+		}
 		
 		// Run the program. 
 		// Check the pattern against the picture in the recipe. If it matches, you are done!
