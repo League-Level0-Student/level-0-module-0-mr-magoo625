@@ -24,6 +24,7 @@ spirally.setSpeed(1000);
 int count=0;
 count+=1; 
 
+
 		// LOOP. Start a while loop to repeat the COLOR, DRAW, TURN, and COUNT code below until 50 lines have been drawn
 		while(count < 90) {
 			// COLOR.   Have the robot set a random pen color:      
